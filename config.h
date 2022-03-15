@@ -78,7 +78,7 @@ static const char *previous_spotify[] = { "playerctl", "previous","-p", "spotify
 static const char *play_pause[] = { "playerctl", "play-pause", "-i", "spotify", NULL};
 static const char *next[] = { "playerctl", "next","-i", "spotify", NULL};
 static const char *previous[] = { "playerctl", "previous","-i", "spotify", NULL};
-static const char *yoath[] = { "yubikey-oath-dmenu", "--clipboard", "--type", "--stdout", "--notify",  NULL};
+static const char *yoath[] = { "yubikey-oath-dmenu", "--clipboard-cmd", "xclip -sel c", "--stdout", "--notify",  NULL};
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
